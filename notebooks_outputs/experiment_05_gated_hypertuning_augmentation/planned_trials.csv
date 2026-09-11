@@ -1,0 +1,15 @@
+trial_name,trial_group,augmentation,epochs,batch_size,lr_text,lr_image,weight_decay,text_dropout,classifier_dropout,class_weight_power,scheduler,freeze_bert,freeze_image_backbone
+baseline_no_aug,01_baseline_simple_aug,none,10,32,2e-05,0.0001,0.0001,0.2,0.3,1.0,constant,True,False
+light_geometric_default_lr,01_baseline_simple_aug,light_geometric,10,32,2e-05,0.0001,0.0001,0.2,0.3,1.0,constant,True,False
+intensity_jitter_default_lr,01_baseline_simple_aug,intensity_jitter,10,32,2e-05,0.0001,0.0001,0.2,0.3,1.0,constant,True,False
+combined_light_default_lr,02_combined_aug,combined_light,10,32,2e-05,0.0001,0.0001,0.2,0.3,1.0,constant,True,False
+combined_erasing_default_lr,02_combined_aug,combined_erasing,10,32,2e-05,0.0001,0.0001,0.2,0.3,1.0,constant,True,False
+intensity_jitter_low_dropout,03_dropout_tuning,intensity_jitter,10,32,2e-05,0.0001,0.0001,0.1,0.2,1.0,constant,True,False
+intensity_jitter_medium_high_dropout,03_dropout_tuning,intensity_jitter,10,32,2e-05,0.0001,0.0001,0.3,0.4,1.0,constant,True,False
+intensity_jitter_classifier_dropout_only,03_dropout_tuning,intensity_jitter,10,32,2e-05,0.0001,0.0001,0.2,0.5,1.0,constant,True,False
+intensity_jitter_lower_image_lr,04_learning_rate_tuning,intensity_jitter,10,32,2e-05,5e-05,0.0001,0.2,0.3,1.0,constant,True,False
+intensity_jitter_higher_image_lr,04_learning_rate_tuning,intensity_jitter,10,32,2e-05,0.0002,0.0001,0.2,0.3,1.0,constant,True,False
+intensity_jitter_lower_text_lr,04_learning_rate_tuning,intensity_jitter,10,32,1e-05,0.0001,0.0001,0.2,0.3,1.0,constant,True,False
+intensity_jitter_stronger_weight_decay,05_regularization_class_balance,intensity_jitter,10,32,2e-05,0.0001,0.0005,0.2,0.3,1.0,constant,True,False
+intensity_jitter_soft_class_weights,05_regularization_class_balance,intensity_jitter,10,32,2e-05,0.0001,0.0001,0.2,0.3,0.5,constant,True,False
+intensity_jitter_regularized_mix,05_regularization_class_balance,intensity_jitter,10,32,2e-05,0.0001,0.0005,0.3,0.4,0.5,constant,True,False

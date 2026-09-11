@@ -1,0 +1,13 @@
+{
+  "best_trial_name": "intensity_jitter_regularized_mix",
+  "model_architecture": "Bio_ClinicalBERT residual gated fusion",
+  "text_encoder": "emilyalsentzer/Bio_ClinicalBERT",
+  "fusion_block": "ResidualGatedFusionBlock",
+  "image_pipeline": "a_original_full",
+  "image_pipeline_source": "notebook_04_original_full",
+  "best_val_macro_f1": 0.5327797329965933,
+  "test_accuracy": 0.673728813559322,
+  "test_macro_f1": 0.40849865835006993,
+  "test_weighted_f1": 0.6851406273941973,
+  "checkpoint_path": "PROJECT_ROOT\\Experiments\\outputs\\experiment_05_gated_hypertuning_augmentation\\intensity_jitter_regularized_mix\\best_checkpoint.pt"
+}

@@ -1,0 +1,11 @@
+encoder_name,encoder_slug,task_type,seed,split,class_name,precision,recall,f1_score,support
+Bio_ClinicalBERT,bio_clinicalbert,text_only,42,validation,cardiomegaly,0.13636363636363635,0.23684210526315788,0.17307692307692307,38.0
+Bio_ClinicalBERT,bio_clinicalbert,text_only,42,validation,chronic_lung_disease,0.07692307692307693,0.125,0.09523809523809523,16.0
+Bio_ClinicalBERT,bio_clinicalbert,text_only,42,validation,normal,0.7491166077738516,0.6127167630057804,0.6740858505564388,346.0
+Bio_ClinicalBERT,bio_clinicalbert,text_only,42,validation,pleural_effusion,0.09803921568627451,0.2,0.13157894736842105,25.0
+Bio_ClinicalBERT,bio_clinicalbert,text_only,42,validation,pneumonia_or_opacity,0.13043478260869565,0.1276595744680851,0.12903225806451613,47.0
+Bio_ClinicalBERT,bio_clinicalbert,text_only,42,test,cardiomegaly,0.08333333333333333,0.15789473684210525,0.10909090909090909,38.0
+Bio_ClinicalBERT,bio_clinicalbert,text_only,42,test,chronic_lung_disease,0.0,0.0,0.0,17.0
+Bio_ClinicalBERT,bio_clinicalbert,text_only,42,test,normal,0.724025974025974,0.6463768115942029,0.6830015313935681,345.0
+Bio_ClinicalBERT,bio_clinicalbert,text_only,42,test,pleural_effusion,0.06451612903225806,0.07692307692307693,0.07017543859649122,26.0
+Bio_ClinicalBERT,bio_clinicalbert,text_only,42,test,pneumonia_or_opacity,0.18181818181818182,0.13043478260869565,0.1518987341772152,46.0

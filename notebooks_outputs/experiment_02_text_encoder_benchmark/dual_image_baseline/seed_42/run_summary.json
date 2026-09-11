@@ -1,0 +1,21 @@
+{
+  "encoder_name": "DualImageResNet18",
+  "encoder_slug": "dual_image_resnet18",
+  "task_type": "image_only",
+  "seed": 42,
+  "tokenizer_name": null,
+  "tokenizer_note": "Image-only baseline does not use text tokenization.",
+  "best_epoch": 5,
+  "val_loss": 2.472140912282265,
+  "val_accuracy": 0.7669491525423728,
+  "val_macro_f1": 0.4313038548529772,
+  "val_macro_auroc": 0.8191184866889376,
+  "val_macro_auprc": 0.4825659208449552,
+  "test_loss": 2.8862852929002147,
+  "test_accuracy": 0.7563559322033898,
+  "test_macro_f1": 0.35951352606023423,
+  "test_macro_auroc": 0.7793583966819466,
+  "test_macro_auprc": 0.4490663515749519,
+  "checkpoint_path": "PROJECT_ROOT\\Experiments\\outputs\\experiment_02_text_encoder_benchmark\\dual_image_baseline\\seed_42\\best_checkpoint.pt",
+  "run_dir": "PROJECT_ROOT\\Experiments\\outputs\\experiment_02_text_encoder_benchmark\\dual_image_baseline\\seed_42"
+}

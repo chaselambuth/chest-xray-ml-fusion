@@ -1,0 +1,20 @@
+{
+  "encoder_name": "RadBERT",
+  "encoder_slug": "radbert",
+  "task_type": "text_only",
+  "seed": 42,
+  "tokenizer_name": "StanfordAIMI/RadBERT",
+  "best_epoch": 9,
+  "val_loss": 1.557552984205343,
+  "val_accuracy": 0.4661016949152542,
+  "val_macro_f1": 0.2472391589376695,
+  "val_macro_auroc": 0.6111457193971743,
+  "val_macro_auprc": 0.26846429893985113,
+  "test_loss": 1.5770017151105202,
+  "test_accuracy": 0.4491525423728814,
+  "test_macro_f1": 0.23239270393293382,
+  "test_macro_auroc": 0.6018500175264464,
+  "test_macro_auprc": 0.23406321153523937,
+  "checkpoint_path": "PROJECT_ROOT\\Experiments\\outputs\\experiment_02_text_encoder_benchmark\\radbert_text_only\\seed_42\\best_checkpoint.pt",
+  "run_dir": "PROJECT_ROOT\\Experiments\\outputs\\experiment_02_text_encoder_benchmark\\radbert_text_only\\seed_42"
+}

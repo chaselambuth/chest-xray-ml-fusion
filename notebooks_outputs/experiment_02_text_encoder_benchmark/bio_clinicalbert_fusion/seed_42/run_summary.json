@@ -1,0 +1,20 @@
+{
+  "encoder_name": "Bio_ClinicalBERT",
+  "encoder_slug": "bio_clinicalbert",
+  "task_type": "fusion",
+  "seed": 42,
+  "tokenizer_name": "emilyalsentzer/Bio_ClinicalBERT",
+  "best_epoch": 9,
+  "val_loss": 3.4000771409374173,
+  "val_accuracy": 0.7838983050847458,
+  "val_macro_f1": 0.4332310204154715,
+  "val_macro_auroc": 0.8079667281146243,
+  "val_macro_auprc": 0.4867292213584033,
+  "test_loss": 3.897525771189544,
+  "test_accuracy": 0.7627118644067796,
+  "test_macro_f1": 0.3114346305323749,
+  "test_macro_auroc": 0.7885902152655229,
+  "test_macro_auprc": 0.4387857995233232,
+  "checkpoint_path": "PROJECT_ROOT\\Experiments\\outputs\\experiment_02_text_encoder_benchmark\\bio_clinicalbert_fusion\\seed_42\\best_checkpoint.pt",
+  "run_dir": "PROJECT_ROOT\\Experiments\\outputs\\experiment_02_text_encoder_benchmark\\bio_clinicalbert_fusion\\seed_42"
+}

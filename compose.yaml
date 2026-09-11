@@ -1,0 +1,12 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8501:8501"
+    volumes:
+      - ../hf_cache:/app/hf_cache
+      - ../splits:/app/splits:ro
+      - ../Experiments/outputs/experiment_04_segmentation:/app/Experiments/outputs/experiment_04_segmentation:ro
+    restart: unless-stopped

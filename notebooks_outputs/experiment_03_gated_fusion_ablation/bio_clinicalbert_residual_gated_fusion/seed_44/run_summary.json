@@ -1,0 +1,12 @@
+{
+  "model": "Bio_ClinicalBERT residual gated fusion",
+  "source": "notebook_03",
+  "seed": 44,
+  "best_epoch": 5,
+  "best_val_acc": 0.75,
+  "test_loss": 3.3763699571965105,
+  "test_accuracy": 0.7669491525423728,
+  "test_macro_f1": 0.361195471820605,
+  "checkpoint_path": "PROJECT_ROOT\\Experiments\\outputs\\experiment_03_gated_fusion_ablation\\bio_clinicalbert_residual_gated_fusion\\seed_44\\best_checkpoint.pt",
+  "run_dir": "PROJECT_ROOT\\Experiments\\outputs\\experiment_03_gated_fusion_ablation\\bio_clinicalbert_residual_gated_fusion\\seed_44"
+}

@@ -1,0 +1,5 @@
+{
+  "model": "bio_clinicalbert_text_only",
+  "test_accuracy": 0.4258474576271186,
+  "macro_f1": 0.22598321895479007
+}

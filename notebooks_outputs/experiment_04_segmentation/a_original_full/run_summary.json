@@ -1,0 +1,20 @@
+{
+  "pipeline_name": "A_original_full",
+  "pipeline_slug": "a_original_full",
+  "description": "Original full frontal and original lateral images.",
+  "model_architecture": "Bio_ClinicalBERT residual gated fusion",
+  "text_encoder": "emilyalsentzer/Bio_ClinicalBERT",
+  "fusion_block": "ResidualGatedFusionBlock",
+  "best_epoch": 10,
+  "val_loss": 2.804387811887062,
+  "val_accuracy": 0.7796610169491526,
+  "val_macro_f1": 0.48651187513243094,
+  "test_loss": 3.4231825036517645,
+  "test_accuracy": 0.7372881355932204,
+  "test_macro_f1": 0.42034298143493354,
+  "checkpoint_path": "PROJECT_ROOT\\Experiments\\outputs\\experiment_04_segmentation\\a_original_full\\best_checkpoint.pt",
+  "best_checkpoint_path": "PROJECT_ROOT\\Experiments\\outputs\\experiment_04_segmentation\\a_original_full\\best_checkpoint.pt",
+  "last_checkpoint_path": "PROJECT_ROOT\\Experiments\\outputs\\experiment_04_segmentation\\a_original_full\\last_checkpoint.pt",
+  "resumed_from_checkpoint": true,
+  "checkpoint_policy": "last checkpoint saved every epoch; best checkpoint saved on validation accuracy improvement"
+}

@@ -1,0 +1,6 @@
+class_name,precision,recall,f1-score,support
+cardiomegaly,0.0,0.0,0.0,38.0
+chronic_lung_disease,0.0,0.0,0.0,16.0
+normal,0.740909090909091,0.9421965317919075,0.8295165394402035,346.0
+pleural_effusion,0.0,0.0,0.0,25.0
+pneumonia_or_opacity,0.13043478260869565,0.06382978723404255,0.08571428571428572,47.0

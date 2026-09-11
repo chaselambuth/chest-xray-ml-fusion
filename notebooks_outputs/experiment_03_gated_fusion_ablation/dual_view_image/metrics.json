@@ -1,0 +1,5 @@
+{
+  "model": "dual_view_image",
+  "test_accuracy": 0.652542372881356,
+  "macro_f1": 0.4061595472611784
+}

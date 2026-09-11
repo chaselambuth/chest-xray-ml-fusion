@@ -1,0 +1,13 @@
+{
+  "encoder_name": "Bio_ClinicalBERT",
+  "encoder_slug": "bio_clinicalbert",
+  "task_type": "fusion",
+  "best_epoch": 2,
+  "val_loss": 1.3081928231453492,
+  "val_accuracy": 0.7563559322033898,
+  "val_macro_f1": 0.4803255232247463,
+  "test_loss": 1.4780927424208592,
+  "test_accuracy": 0.7309322033898306,
+  "test_macro_f1": 0.3822527102726322,
+  "checkpoint_path": "PROJECT_ROOT\\Experiments\\outputs\\experiment_02_text_encoder_benchmark\\bio_clinicalbert_fusion\\best_checkpoint.pt"
+}

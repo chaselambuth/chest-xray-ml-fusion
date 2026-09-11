@@ -1,0 +1,11 @@
+pipeline_name,pipeline_slug,split,class_name,precision,recall,f1-score,support
+B_lung_cropped_frontal,b_lung_cropped_frontal,validation,cardiomegaly,0.7058823529411765,0.3157894736842105,0.43636363636363634,38.0
+B_lung_cropped_frontal,b_lung_cropped_frontal,validation,chronic_lung_disease,0.6666666666666666,0.125,0.21052631578947367,16.0
+B_lung_cropped_frontal,b_lung_cropped_frontal,validation,normal,0.7948113207547169,0.9739884393063584,0.8753246753246753,346.0
+B_lung_cropped_frontal,b_lung_cropped_frontal,validation,pleural_effusion,0.42857142857142855,0.12,0.1875,25.0
+B_lung_cropped_frontal,b_lung_cropped_frontal,validation,pneumonia_or_opacity,0.3333333333333333,0.14893617021276595,0.20588235294117646,47.0
+B_lung_cropped_frontal,b_lung_cropped_frontal,test,cardiomegaly,0.7142857142857143,0.2631578947368421,0.38461538461538464,38.0
+B_lung_cropped_frontal,b_lung_cropped_frontal,test,chronic_lung_disease,0.8,0.23529411764705882,0.36363636363636365,17.0
+B_lung_cropped_frontal,b_lung_cropped_frontal,test,normal,0.7905882352941176,0.9739130434782609,0.8727272727272727,345.0
+B_lung_cropped_frontal,b_lung_cropped_frontal,test,pleural_effusion,0.0,0.0,0.0,26.0
+B_lung_cropped_frontal,b_lung_cropped_frontal,test,pneumonia_or_opacity,0.4074074074074074,0.2391304347826087,0.3013698630136986,46.0

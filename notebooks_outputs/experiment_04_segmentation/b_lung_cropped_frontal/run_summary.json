@@ -1,0 +1,20 @@
+{
+  "pipeline_name": "B_lung_cropped_frontal",
+  "pipeline_slug": "b_lung_cropped_frontal",
+  "description": "Lung-cropped frontal image with original lateral image.",
+  "model_architecture": "Bio_ClinicalBERT residual gated fusion",
+  "text_encoder": "emilyalsentzer/Bio_ClinicalBERT",
+  "fusion_block": "ResidualGatedFusionBlock",
+  "best_epoch": 9,
+  "val_loss": 4.31977016238843,
+  "val_accuracy": 0.7648305084745762,
+  "val_macro_f1": 0.3831193960837923,
+  "test_loss": 4.975464554156288,
+  "test_accuracy": 0.7648305084745762,
+  "test_macro_f1": 0.3844697767985439,
+  "checkpoint_path": "PROJECT_ROOT\\Experiments\\outputs\\experiment_04_segmentation\\b_lung_cropped_frontal\\best_checkpoint.pt",
+  "best_checkpoint_path": "PROJECT_ROOT\\Experiments\\outputs\\experiment_04_segmentation\\b_lung_cropped_frontal\\best_checkpoint.pt",
+  "last_checkpoint_path": "PROJECT_ROOT\\Experiments\\outputs\\experiment_04_segmentation\\b_lung_cropped_frontal\\last_checkpoint.pt",
+  "resumed_from_checkpoint": true,
+  "checkpoint_policy": "last checkpoint saved every epoch; best checkpoint saved on validation accuracy improvement"
+}

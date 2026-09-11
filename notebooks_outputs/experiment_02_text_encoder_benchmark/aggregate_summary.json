@@ -1,0 +1,72 @@
+[
+  {
+    "encoder_name": "Bio_ClinicalBERT",
+    "encoder_slug": "bio_clinicalbert",
+    "task_type": "fusion",
+    "tokenizer_name": "emilyalsentzer/Bio_ClinicalBERT",
+    "test_accuracy_mean": 0.7627118644067796,
+    "test_macro_f1_mean": 0.3114346305323749,
+    "test_macro_auroc_mean": 0.7885902152655229,
+    "test_macro_auprc_mean": 0.4387857995233232
+  },
+  {
+    "encoder_name": "CheXbert",
+    "encoder_slug": "chexbert",
+    "task_type": "fusion",
+    "tokenizer_name": "bert-base-uncased",
+    "test_accuracy_mean": 0.75,
+    "test_macro_f1_mean": 0.40391358457583626,
+    "test_macro_auroc_mean": 0.784650354215105,
+    "test_macro_auprc_mean": 0.44026382998680874
+  },
+  {
+    "encoder_name": "RadBERT",
+    "encoder_slug": "radbert",
+    "task_type": "fusion",
+    "tokenizer_name": "StanfordAIMI/RadBERT",
+    "test_accuracy_mean": 0.7457627118644068,
+    "test_macro_f1_mean": 0.34695454430748546,
+    "test_macro_auroc_mean": 0.79886873687557,
+    "test_macro_auprc_mean": 0.43579474594758016
+  },
+  {
+    "encoder_name": "DualImageResNet18",
+    "encoder_slug": "dual_image_resnet18",
+    "task_type": "image_only",
+    "tokenizer_name": "not_applicable",
+    "test_accuracy_mean": 0.7563559322033898,
+    "test_macro_f1_mean": 0.35951352606023423,
+    "test_macro_auroc_mean": 0.7793583966819466,
+    "test_macro_auprc_mean": 0.4490663515749519
+  },
+  {
+    "encoder_name": "CheXbert",
+    "encoder_slug": "chexbert",
+    "task_type": "text_only",
+    "tokenizer_name": "bert-base-uncased",
+    "test_accuracy_mean": 0.5572033898305084,
+    "test_macro_f1_mean": 0.20674743024963288,
+    "test_macro_auroc_mean": 0.5969788885770878,
+    "test_macro_auprc_mean": 0.24244502823756414
+  },
+  {
+    "encoder_name": "Bio_ClinicalBERT",
+    "encoder_slug": "bio_clinicalbert",
+    "task_type": "text_only",
+    "tokenizer_name": "emilyalsentzer/Bio_ClinicalBERT",
+    "test_accuracy_mean": 0.5021186440677966,
+    "test_macro_f1_mean": 0.20283332265163673,
+    "test_macro_auroc_mean": 0.5617189476854781,
+    "test_macro_auprc_mean": 0.2249989157543924
+  },
+  {
+    "encoder_name": "RadBERT",
+    "encoder_slug": "radbert",
+    "task_type": "text_only",
+    "tokenizer_name": "StanfordAIMI/RadBERT",
+    "test_accuracy_mean": 0.4491525423728814,
+    "test_macro_f1_mean": 0.23239270393293382,
+    "test_macro_auroc_mean": 0.6018500175264464,
+    "test_macro_auprc_mean": 0.23406321153523937
+  }
+]

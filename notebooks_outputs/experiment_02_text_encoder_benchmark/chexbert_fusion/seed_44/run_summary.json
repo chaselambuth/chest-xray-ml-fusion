@@ -1,0 +1,21 @@
+{
+  "encoder_name": "CheXbert",
+  "encoder_slug": "chexbert",
+  "task_type": "fusion",
+  "seed": 44,
+  "tokenizer_name": "bert-base-uncased",
+  "tokenizer_note": "The public CheXbert artifact provides BERT weights but no tokenizer files. The loader constructs BertModel(BertConfig()), whose default 30,522-token vocabulary matches the BERT-base uncased tokenizer, so this run uses bert-base-uncased instead of reusing Bio_ClinicalBERT.",
+  "best_epoch": 5,
+  "val_loss": 2.3995794886249606,
+  "val_accuracy": 0.7648305084745762,
+  "val_macro_f1": 0.41209430950328807,
+  "val_macro_auroc": 0.8218755176844794,
+  "val_macro_auprc": 0.4981689676845454,
+  "test_loss": 2.6658414986173984,
+  "test_accuracy": 0.7584745762711864,
+  "test_macro_f1": 0.381324784207564,
+  "test_macro_auroc": 0.8093253763602615,
+  "test_macro_auprc": 0.46483543175952935,
+  "checkpoint_path": "PROJECT_ROOT\\Experiments\\outputs\\experiment_02_text_encoder_benchmark\\chexbert_fusion\\seed_44\\best_checkpoint.pt",
+  "run_dir": "PROJECT_ROOT\\Experiments\\outputs\\experiment_02_text_encoder_benchmark\\chexbert_fusion\\seed_44"
+}

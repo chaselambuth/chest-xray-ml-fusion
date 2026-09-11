@@ -1,0 +1,11 @@
+encoder_name,encoder_slug,task_type,split,class_name,precision,recall,f1-score,support
+RadBERT,radbert,fusion,validation,cardiomegaly,0.6774193548387096,0.5526315789473685,0.6086956521739131,38.0
+RadBERT,radbert,fusion,validation,chronic_lung_disease,0.35,0.4375,0.3888888888888889,16.0
+RadBERT,radbert,fusion,validation,normal,0.8509485094850948,0.9075144508670521,0.8783216783216783,346.0
+RadBERT,radbert,fusion,validation,pleural_effusion,0.3181818181818182,0.28,0.2978723404255319,25.0
+RadBERT,radbert,fusion,validation,pneumonia_or_opacity,0.36666666666666664,0.23404255319148937,0.2857142857142857,47.0
+RadBERT,radbert,fusion,test,cardiomegaly,0.4375,0.3684210526315789,0.4,38.0
+RadBERT,radbert,fusion,test,chronic_lung_disease,0.35714285714285715,0.29411764705882354,0.3225806451612903,17.0
+RadBERT,radbert,fusion,test,normal,0.8355437665782494,0.9130434782608695,0.8725761772853186,345.0
+RadBERT,radbert,fusion,test,pleural_effusion,0.3333333333333333,0.19230769230769232,0.24390243902439024,26.0
+RadBERT,radbert,fusion,test,pneumonia_or_opacity,0.3235294117647059,0.2391304347826087,0.275,46.0

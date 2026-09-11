@@ -1,0 +1,2 @@
+model,source,test_accuracy_mean,test_macro_f1_mean,val_accuracy_mean,val_macro_f1_mean
+Bio_ClinicalBERT residual gated fusion,notebook_03,0.7754237288135594,0.4089155283330651,0.777542372881356,

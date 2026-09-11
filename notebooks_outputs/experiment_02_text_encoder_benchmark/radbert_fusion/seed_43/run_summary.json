@@ -1,0 +1,21 @@
+{
+  "encoder_name": "RadBERT",
+  "encoder_slug": "radbert",
+  "task_type": "fusion",
+  "seed": 43,
+  "tokenizer_name": "StanfordAIMI/RadBERT",
+  "tokenizer_note": "Uses the tokenizer shipped with the RadBERT checkpoint.",
+  "best_epoch": 4,
+  "val_loss": 2.0602911690534174,
+  "val_accuracy": 0.7796610169491526,
+  "val_macro_f1": 0.43596996078535877,
+  "val_macro_auroc": 0.8319330293740013,
+  "val_macro_auprc": 0.4835693928179314,
+  "test_loss": 2.4349298598402638,
+  "test_accuracy": 0.75,
+  "test_macro_f1": 0.3687159747517804,
+  "test_macro_auroc": 0.7978899264328776,
+  "test_macro_auprc": 0.43289866224879514,
+  "checkpoint_path": "PROJECT_ROOT\\Experiments\\outputs\\experiment_02_text_encoder_benchmark\\radbert_fusion\\seed_43\\best_checkpoint.pt",
+  "run_dir": "PROJECT_ROOT\\Experiments\\outputs\\experiment_02_text_encoder_benchmark\\radbert_fusion\\seed_43"
+}

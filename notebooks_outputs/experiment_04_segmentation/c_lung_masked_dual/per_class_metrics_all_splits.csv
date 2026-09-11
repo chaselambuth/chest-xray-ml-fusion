@@ -1,0 +1,11 @@
+pipeline_name,pipeline_slug,split,class_name,precision,recall,f1-score,support
+C_lung_masked_dual,c_lung_masked_dual,validation,cardiomegaly,0.1774193548387097,0.2894736842105263,0.22,38.0
+C_lung_masked_dual,c_lung_masked_dual,validation,chronic_lung_disease,0.08641975308641975,0.4375,0.14432989690721648,16.0
+C_lung_masked_dual,c_lung_masked_dual,validation,normal,0.8125,0.30057803468208094,0.4388185654008439,346.0
+C_lung_masked_dual,c_lung_masked_dual,validation,pleural_effusion,0.05405405405405406,0.16,0.08080808080808081,25.0
+C_lung_masked_dual,c_lung_masked_dual,validation,pneumonia_or_opacity,0.13385826771653545,0.3617021276595745,0.19540229885057472,47.0
+C_lung_masked_dual,c_lung_masked_dual,test,cardiomegaly,0.1375,0.2894736842105263,0.1864406779661017,38.0
+C_lung_masked_dual,c_lung_masked_dual,test,chronic_lung_disease,0.05,0.23529411764705882,0.08247422680412371,17.0
+C_lung_masked_dual,c_lung_masked_dual,test,normal,0.7424242424242424,0.28405797101449276,0.4109014675052411,345.0
+C_lung_masked_dual,c_lung_masked_dual,test,pleural_effusion,0.03125,0.07692307692307693,0.044444444444444446,26.0
+C_lung_masked_dual,c_lung_masked_dual,test,pneumonia_or_opacity,0.1724137931034483,0.43478260869565216,0.24691358024691357,46.0

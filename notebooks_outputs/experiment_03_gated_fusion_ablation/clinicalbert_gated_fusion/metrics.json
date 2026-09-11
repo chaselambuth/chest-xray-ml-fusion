@@ -1,0 +1,5 @@
+{
+  "model": "clinicalbert_gated_fusion",
+  "test_accuracy": 0.6694915254237288,
+  "macro_f1": 0.35908194150395983
+}

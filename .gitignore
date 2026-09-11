@@ -1,0 +1,49 @@
+__pycache__/
+*.py[cod]
+*$py.class
+
+.pytest_cache/
+.ipynb_checkpoints/
+.mypy_cache/
+.ruff_cache/
+
+.venv/
+venv/
+env/
+
+.DS_Store
+Thumbs.db
+
+# Local data and generated artifacts
+images_normalized/
+hf_cache/
+resolved_hf_models/
+splits/
+Experiments/
+indiana_projections.csv
+indiana_reports.csv
+study_level_dataset.csv
+
+# Model/checkpoint files
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.safetensors
+
+# Generated visual artifacts
+*.png
+*.jpg
+*.jpeg
+!static/**/*.png
+!static/**/*.jpg
+!static/**/*.jpeg
+
+# Local command notes
+flask_command.txt
+streamlit_command.txt
+
+# Stale project folders
+archive/
+legacy/
+notebook_originals_before_python_refactor_2026_08_18/

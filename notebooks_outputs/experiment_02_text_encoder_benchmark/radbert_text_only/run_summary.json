@@ -1,0 +1,13 @@
+{
+  "encoder_name": "RadBERT",
+  "encoder_slug": "radbert",
+  "task_type": "text_only",
+  "best_epoch": 1,
+  "val_loss": 1.5850094213324077,
+  "val_accuracy": 0.614406779661017,
+  "val_macro_f1": 0.2430040327594855,
+  "test_loss": 1.5501299227698375,
+  "test_accuracy": 0.6313559322033898,
+  "test_macro_f1": 0.23936460637100843,
+  "checkpoint_path": "PROJECT_ROOT\\Experiments\\outputs\\experiment_02_text_encoder_benchmark\\radbert_text_only\\best_checkpoint.pt"
+}

@@ -1,0 +1,5 @@
+{
+  "pretrained_segmenter_model": "Tianmu28/segformer-b0-segments-lungs-xray",
+  "seed": 42,
+  "segmentation_inference_size": 512
+}

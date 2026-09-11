@@ -1,0 +1,13 @@
+{
+  "encoder_name": "Bio_ClinicalBERT",
+  "encoder_slug": "bio_clinicalbert",
+  "task_type": "text_only",
+  "best_epoch": 1,
+  "val_loss": 1.5542868092908697,
+  "val_accuracy": 0.6970338983050848,
+  "val_macro_f1": 0.18304616503089785,
+  "test_loss": 1.5494728270223586,
+  "test_accuracy": 0.7076271186440678,
+  "test_macro_f1": 0.18887482487863683,
+  "checkpoint_path": "PROJECT_ROOT\\Experiments\\outputs\\experiment_02_text_encoder_benchmark\\bio_clinicalbert_text_only\\best_checkpoint.pt"
+}

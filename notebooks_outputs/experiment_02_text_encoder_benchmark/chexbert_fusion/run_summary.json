@@ -1,0 +1,13 @@
+{
+  "encoder_name": "CheXbert",
+  "encoder_slug": "chexbert",
+  "task_type": "fusion",
+  "best_epoch": 3,
+  "val_loss": 1.698571492586348,
+  "val_accuracy": 0.7860169491525424,
+  "val_macro_f1": 0.4599072239054377,
+  "test_loss": 1.8449186173788572,
+  "test_accuracy": 0.7563559322033898,
+  "test_macro_f1": 0.42467850298013954,
+  "checkpoint_path": "PROJECT_ROOT\\Experiments\\outputs\\experiment_02_text_encoder_benchmark\\chexbert_fusion\\best_checkpoint.pt"
+}

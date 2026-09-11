@@ -1,0 +1,31 @@
+augmentation,transform
+none,"Compose(
+    Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=True)
+    ToTensor()
+)"
+light_geometric,"Compose(
+    Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=True)
+    RandomRotation(degrees=[-7.0, 7.0], interpolation=nearest, expand=False, fill=0)
+    RandomAffine(degrees=[0.0, 0.0], translate=(0.03, 0.03), scale=(0.95, 1.05))
+    ToTensor()
+)"
+intensity_jitter,"Compose(
+    Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=True)
+    ColorJitter(brightness=(0.88, 1.12), contrast=(0.88, 1.12), saturation=None, hue=None)
+    ToTensor()
+)"
+combined_light,"Compose(
+    Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=True)
+    RandomRotation(degrees=[-7.0, 7.0], interpolation=nearest, expand=False, fill=0)
+    RandomAffine(degrees=[0.0, 0.0], translate=(0.03, 0.03), scale=(0.95, 1.05))
+    ColorJitter(brightness=(0.9, 1.1), contrast=(0.9, 1.1), saturation=None, hue=None)
+    ToTensor()
+)"
+combined_erasing,"Compose(
+    Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=True)
+    RandomRotation(degrees=[-7.0, 7.0], interpolation=nearest, expand=False, fill=0)
+    RandomAffine(degrees=[0.0, 0.0], translate=(0.03, 0.03), scale=(0.95, 1.05))
+    ColorJitter(brightness=(0.9, 1.1), contrast=(0.9, 1.1), saturation=None, hue=None)
+    ToTensor()
+    RandomErasing(p=0.2, scale=(0.01, 0.04), ratio=(0.4, 2.5), value=0.0, inplace=False)
+)"

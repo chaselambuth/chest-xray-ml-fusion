@@ -1,0 +1,20 @@
+{
+  "encoder_name": "CheXbert",
+  "encoder_slug": "chexbert",
+  "task_type": "fusion",
+  "seed": 42,
+  "tokenizer_name": "bert-base-uncased",
+  "best_epoch": 4,
+  "val_loss": 1.8724404896719982,
+  "val_accuracy": 0.7838983050847458,
+  "val_macro_f1": 0.4951942374066317,
+  "val_macro_auroc": 0.8417683401778232,
+  "val_macro_auprc": 0.4957573933931846,
+  "test_loss": 2.2165633985551736,
+  "test_accuracy": 0.75,
+  "test_macro_f1": 0.40391358457583626,
+  "test_macro_auroc": 0.784650354215105,
+  "test_macro_auprc": 0.44026382998680874,
+  "checkpoint_path": "PROJECT_ROOT\\Experiments\\outputs\\experiment_02_text_encoder_benchmark\\chexbert_fusion\\seed_42\\best_checkpoint.pt",
+  "run_dir": "PROJECT_ROOT\\Experiments\\outputs\\experiment_02_text_encoder_benchmark\\chexbert_fusion\\seed_42"
+}

@@ -1,0 +1,21 @@
+{
+  "encoder_name": "Bio_ClinicalBERT",
+  "encoder_slug": "bio_clinicalbert",
+  "task_type": "fusion",
+  "seed": 43,
+  "tokenizer_name": "emilyalsentzer/Bio_ClinicalBERT",
+  "tokenizer_note": "Uses the tokenizer shipped with the Bio_ClinicalBERT checkpoint.",
+  "best_epoch": 5,
+  "val_loss": 2.400806431042946,
+  "val_accuracy": 0.7754237288135594,
+  "val_macro_f1": 0.43777627029506877,
+  "val_macro_auroc": 0.8449284557456738,
+  "val_macro_auprc": 0.4918171115819615,
+  "test_loss": 2.7986377578670694,
+  "test_accuracy": 0.7478813559322034,
+  "test_macro_f1": 0.38589636601990757,
+  "test_macro_auroc": 0.8053349932810656,
+  "test_macro_auprc": 0.4519337379049686,
+  "checkpoint_path": "PROJECT_ROOT\\Experiments\\outputs\\experiment_02_text_encoder_benchmark\\bio_clinicalbert_fusion\\seed_43\\best_checkpoint.pt",
+  "run_dir": "PROJECT_ROOT\\Experiments\\outputs\\experiment_02_text_encoder_benchmark\\bio_clinicalbert_fusion\\seed_43"
+}

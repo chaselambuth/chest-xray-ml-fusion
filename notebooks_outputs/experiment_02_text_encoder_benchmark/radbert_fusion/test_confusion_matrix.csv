@@ -1,0 +1,6 @@
+,cardiomegaly,chronic_lung_disease,normal,pleural_effusion,pneumonia_or_opacity
+cardiomegaly,14,1,17,3,3
+chronic_lung_disease,1,5,7,2,2
+normal,10,5,315,2,13
+pleural_effusion,3,1,12,5,5
+pneumonia_or_opacity,4,2,26,3,11

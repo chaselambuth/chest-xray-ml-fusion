@@ -1,0 +1,13 @@
+{
+  "encoder_name": "RadBERT",
+  "encoder_slug": "radbert",
+  "task_type": "fusion",
+  "best_epoch": 3,
+  "val_loss": 1.412620867207899,
+  "val_accuracy": 0.7627118644067796,
+  "val_macro_f1": 0.4918985691048595,
+  "test_loss": 1.5617115510217214,
+  "test_accuracy": 0.7415254237288136,
+  "test_macro_f1": 0.4228118522941998,
+  "checkpoint_path": "PROJECT_ROOT\\Experiments\\outputs\\experiment_02_text_encoder_benchmark\\radbert_fusion\\best_checkpoint.pt"
+}

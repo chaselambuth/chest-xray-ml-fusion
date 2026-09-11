@@ -1,0 +1,45 @@
+{
+  "cardiomegaly": {
+    "precision": 0.4864864864864865,
+    "recall": 0.47368421052631576,
+    "f1-score": 0.48,
+    "support": 38.0
+  },
+  "chronic_lung_disease": {
+    "precision": 0.7272727272727273,
+    "recall": 0.5,
+    "f1-score": 0.5925925925925926,
+    "support": 16.0
+  },
+  "normal": {
+    "precision": 0.8971631205673759,
+    "recall": 0.7312138728323699,
+    "f1-score": 0.8057324840764332,
+    "support": 346.0
+  },
+  "pleural_effusion": {
+    "precision": 0.21568627450980393,
+    "recall": 0.44,
+    "f1-score": 0.2894736842105263,
+    "support": 25.0
+  },
+  "pneumonia_or_opacity": {
+    "precision": 0.15384615384615385,
+    "recall": 0.2978723404255319,
+    "f1-score": 0.2028985507246377,
+    "support": 47.0
+  },
+  "accuracy": 0.6440677966101694,
+  "macro avg": {
+    "precision": 0.49609095253650953,
+    "recall": 0.4885540847568436,
+    "f1-score": 0.47413946232083787,
+    "support": 472.0
+  },
+  "weighted avg": {
+    "precision": 0.7482292710438061,
+    "recall": 0.6440677966101694,
+    "f1-score": 0.6849110062738316,
+    "support": 472.0
+  }
+}

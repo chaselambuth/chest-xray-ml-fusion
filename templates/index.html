@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>XRAY Assist</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+  <main class="shell">
+    <header class="app-header">
+      <div class="eyebrow">XRAY Assist</div>
+      <h1>Chest Imaging Review</h1>
+      <p>Upload frontal and lateral chest X-rays, add relevant indication text, and review model findings with visual attention support.</p>
+      <div class="status-row">
+        <span>Dual-view analysis</span>
+        <span>Lung-field processing</span>
+        <span>Attention overlay included</span>
+      </div>
+    </header>
+
+    <section class="notice">
+      This tool supports image review and is not a standalone diagnosis.
+    </section>
+
+    <form class="workspace" method="post" enctype="multipart/form-data">
+      <aside class="panel controls">
+        <h2>Analysis Settings</h2>
+
+        <label>
+          View
+          <select name="mode">
+            {% for mode in ["Prediction", "Segmentation"] %}
+              <option value="{{ mode }}" {% if selected_mode == mode %}selected{% endif %}>{{ mode }}</option>
+            {% endfor %}
+          </select>
+        </label>
+
+        <label>
+          Image processing
+          <select name="pipeline_slug">
+            {% for slug, spec in pipeline_specs.items() %}
+              <option value="{{ slug }}" {% if selected_pipeline == slug %}selected{% endif %}>{{ spec.name }}</option>
+            {% endfor %}
+          </select>
+        </label>
+
+        <label>
+          Prediction count
+          <input type="number" min="1" max="5" name="top_k" value="{{ selected_top_k }}">
+        </label>
+
+        <label>
+          Lung mask threshold
+          <input type="number" min="0.10" max="0.90" step="0.05" name="threshold" value="{{ selected_threshold }}">
+        </label>
+
+        <button type="submit">Run Analysis</button>
+
+        <div class="summary">
+          <h3>Processing Profiles</h3>
+          {% for slug, spec in pipeline_specs.items() %}
+            <div class="profile {% if selected_pipeline == slug %}active{% endif %}">
+              <strong>{{ spec.name }}</strong>
+              <span>{{ spec.description }}</span>
+            </div>
+          {% endfor %}
+        </div>
+      </aside>
+
+      <section class="panel inputs">
+        <h2>Case Inputs</h2>
+        <div class="upload-grid">
+          <label>
+            Frontal chest X-ray
+            <input type="file" name="frontal" accept=".png,.jpg,.jpeg,image/png,image/jpeg">
+          </label>
+          <label>
+            Lateral chest X-ray
+            <input type="file" name="lateral" accept=".png,.jpg,.jpeg,image/png,image/jpeg">
+          </label>
+        </div>
+
+        <label>
+          Indication
+          <textarea name="indication" rows="5" placeholder="Example: chest pain, shortness of breath, cough">{{ indication }}</textarea>
+        </label>
+
+        {% if error %}
+          <div class="error">{{ error }}</div>
+        {% endif %}
+
+        {% if uploads %}
+          <div class="image-grid two">
+            {% for image in uploads %}
+              <figure>
+                <img src="{{ image.src }}" alt="{{ image.caption }}">
+                <figcaption>{{ image.caption }}</figcaption>
+              </figure>
+            {% endfor %}
+          </div>
+        {% endif %}
+      </section>
+    </form>
+
+    {% if top_prediction %}
+      <section class="metrics">
+        <div>
+          <span>Top finding</span>
+          <strong>{{ top_prediction.display }}</strong>
+        </div>
+        <div>
+          <span>Confidence</span>
+          <strong>{{ top_prediction.percent }}</strong>
+        </div>
+        <div>
+          <span>Processing</span>
+          <strong>{{ pipeline_specs[selected_pipeline].name }}</strong>
+        </div>
+      </section>
+    {% endif %}
+
+    {% if predictions %}
+      <section class="panel results">
+        <h2>Prediction</h2>
+        <div class="bars">
+          {% for pred in predictions %}
+            <div class="bar-row">
+              <div class="bar-head">
+                <span>{{ pred.display }}</span>
+                <span>{{ pred.percent }}</span>
+              </div>
+              <div class="bar-track"><div class="bar-fill" style="width: {{ pred.width }}%"></div></div>
+            </div>
+          {% endfor %}
+        </div>
+        {% if report %}
+          <div class="report">{{ report }}</div>
+        {% endif %}
+      </section>
+    {% endif %}
+
+    {% if model_images %}
+      <section class="panel results">
+        <h2>Analysis Views</h2>
+        <div class="image-grid two">
+          {% for image in model_images %}
+            <figure>
+              <img src="{{ image.src }}" alt="{{ image.caption }}">
+              <figcaption>{{ image.caption }}</figcaption>
+            </figure>
+          {% endfor %}
+        </div>
+      </section>
+    {% endif %}
+
+    {% if attention_images %}
+      <section class="panel results">
+        <h2>Attention</h2>
+        <div class="image-grid two">
+          {% for image in attention_images %}
+            <figure>
+              <img src="{{ image.src }}" alt="{{ image.caption }}">
+              <figcaption>{{ image.caption }}</figcaption>
+            </figure>
+          {% endfor %}
+        </div>
+      </section>
+    {% endif %}
+
+    {% if segmentation_images %}
+      <section class="panel results">
+        <h2>Segmentation</h2>
+        <div class="image-grid three">
+          {% for image in segmentation_images %}
+            <figure>
+              <img src="{{ image.src }}" alt="{{ image.caption }}">
+              <figcaption>{{ image.caption }}</figcaption>
+            </figure>
+          {% endfor %}
+        </div>
+      </section>
+    {% endif %}
+  </main>
+</body>
+</html>
