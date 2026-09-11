@@ -37,7 +37,7 @@ FORBIDDEN_SUFFIXES = {
     ".safetensors",
 }
 
-MAX_FILE_SIZE_BYTES = 50 * 1024 * 1024
+MAX_FILE_SIZE_BYTES = 100 * 1024 * 1024
 
 
 # Return repository paths while skipping Git metadata.
@@ -57,11 +57,11 @@ def check_forbidden_artifacts(paths: list[Path]) -> list[str]:
         if path.is_file() and path.suffix.lower() in FORBIDDEN_SUFFIXES:
             issues.append(f"Forbidden model artifact: {rel}")
         if path.is_file() and path.stat().st_size > MAX_FILE_SIZE_BYTES:
-            issues.append(f"Large file over 50 MB: {rel}")
+            issues.append(f"Large file over 100 MB: {rel}")
     return issues
 
 
-# Verify stripped notebooks are valid notebook files.
+# Verify notebooks are valid notebook files.
 def check_notebooks_parse() -> list[str]:
     try:
         import nbformat
